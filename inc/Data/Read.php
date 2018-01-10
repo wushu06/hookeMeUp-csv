@@ -8,7 +8,7 @@ class Read extends BaseController {
 
     function register() {
 
-        $file = $this->plugin_path.'newp.csv';
+        $file = $this->plugin_path.'price.csv';
         //echo file_get_contents($file);
         /*****************
         Outputing the file
@@ -17,9 +17,11 @@ class Read extends BaseController {
             $output ="<table class='table-bordered table-hover table-responsive'>\n\n";
             $output .= "<thead>\n\n";
             $output .= "<tr>\n\n";
-            $output .= "<th id='sortName' style='cursor: pointer'> Title <i class='fa fa-sort'></i>";
-            $output .= "<th id='sortScore' style='cursor: pointer'> Name<i class='fa fa-sort'></i>";
-            $output .= "<th  style='cursor: pointer'> Price <i class='fa fa-sort'></i>";
+            $output .= "<th > Product id </th>";
+            $output .= "<th> User</th>";
+            $output .= "<th> Min Qty</th> ";
+            $output .= "<th> Flat</th>";
+            $output .= "<th > %</th> ";
         
             $output .= "</tr>\n\n";
             $output .= "</thead>\n\n";

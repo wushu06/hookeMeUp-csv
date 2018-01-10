@@ -21,7 +21,7 @@ class Admin extends BaseController {
             'manage_options',
             'hookeMeUp',
             array($this, 'hookeMeUp_display_settings_page'),
-            'dashicons-admin-generic',
+            $this->plugin_url.'assets/images/crane.png',
             null
         );
     
